@@ -50,5 +50,31 @@
     "notes": "",
     "paint_plan": "",
     "tags": ["character", "melee"]
+  },
+  {
+    "id": "unit-005",
+    "faction": "Raven Guard",
+    "name": "Kayvaan Shrike",
+    "role": "Character",
+    "points_cost": 100,
+    "quantity_owned": 1,
+    "painted_status": "Primed",
+    "images": ["images/Kayvaan Shrike/Kayvaan Shrike-1.jpg"],
+    "notes": "Resin printed, Currently primed but unpainted",
+    "paint_plan": "",
+    "tags": ["Epic Hero", "Character", "Infantry", "Imperium", "Fly", "Jump Pack", "Faction: Adeptus Astartes", "Faction: Raven Guard", "Kayvaan Shrike", "Phobos", "Captain"]
+  },
+  {
+    "id": "unit-006",
+    "faction": "Raven Guard",
+    "name": "Assault Intercessors with Jump Packs",
+    "role": "Character",
+    "points_cost": 160,
+    "quantity_owned": 10,
+    "painted_status": "Primed",
+    "images": ["images/JPIs/JPIs 1-1.jpg"],
+    "notes": "They were kitbashed from a MkVI Assault Squad kit into JPIs for 40k.",
+    "paint_plan": "",
+    "tags": ["Infantry",  "Grenades",  "Imperium",  "Fly",  "Tacticus",  "Jump Pack",  "Faction: Adeptus Astartes",  "Assault Intercessors with Jump Packs"]
   }
 ]
