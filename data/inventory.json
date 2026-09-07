@@ -1,0 +1,41 @@
+[
+  {
+    "id": "unit-001",
+    "faction": "Space Marines",
+    "name": "Intercessor Squad",
+    "role": "Battleline",
+    "points_cost": 90,
+    "quantity_owned": 5,
+    "painted_status": "Painted",
+    "images": [],
+    "notes": "Primaris scheme, ultramarine blue base with gold trim.",
+    "paint_plan": "Base: Macragge Blue. Trim: Retributor Armour. Wash: Nuln Oil on all recesses.",
+    "tags": ["troops", "ranged"]
+  },
+  {
+    "id": "unit-002",
+    "faction": "Space Marines",
+    "name": "Redemptor Dreadnought",
+    "role": "Heavy Support",
+    "points_cost": 190,
+    "quantity_owned": 1,
+    "painted_status": "WIP",
+    "images": [],
+    "notes": "Big centerpiece model, magnetized the fist/cannon arm.",
+    "paint_plan": "Same blue/gold scheme as the squad. Battle damage chipping on the legs.",
+    "tags": ["vehicle", "heavy"]
+  },
+  {
+    "id": "unit-003",
+    "faction": "Space Marines",
+    "name": "Captain in Terminator Armour",
+    "role": "Character",
+    "points_cost": 110,
+    "quantity_owned": 1,
+    "painted_status": "Unpainted",
+    "images": [],
+    "notes": "Still in the box.",
+    "paint_plan": "",
+    "tags": ["character", "melee"]
+  }
+]

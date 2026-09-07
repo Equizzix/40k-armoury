@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Armory — Miniature Inventory &amp; List Builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="armory-header">
+    <div class="hazard-bar"></div>
+    <div class="header-inner">
+      <p class="eyebrow">miniature inventory &amp; list builder</p>
+      <h1>The Armory</h1>
+      <p class="subhead">Every unit you own, what it costs, and what's painted — plus a builder to hit a points limit.</p>
+    </div>
+    <div class="hazard-bar"></div>
+  </header>
+
+  <nav class="view-tabs" id="viewTabs" role="tablist">
+    <button class="view-tab active" data-view="collection" role="tab" aria-selected="true">Collection</button>
+    <button class="view-tab" data-view="builder" role="tab" aria-selected="false">Army List Builder</button>
+  </nav>
+
+  <main>
+    <!-- ===== COLLECTION VIEW ===== -->
+    <section class="view" id="view-collection">
+      <section class="control-strip">
+        <select id="factionFilter"><option value="all">All factions</option></select>
+        <select id="statusFilter">
+          <option value="all">All paint status</option>
+          <option value="Unpainted">Unpainted</option>
+          <option value="Primed">Primed</option>
+          <option value="WIP">WIP</option>
+          <option value="Painted">Painted</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="Search name, role, tag…" autocomplete="off">
+      </section>
+
+      <section class="totals-strip" id="totalsStrip"></section>
+      <section class="grid" id="cardGrid"></section>
+      <p class="empty-state" id="emptyState" hidden>Nothing here yet — add a unit to <code>data/inventory.json</code>.</p>
+    </section>
+
+    <!-- ===== ARMY BUILDER VIEW ===== -->
+    <section class="view" id="view-builder" hidden>
+      <section class="builder-header">
+        <label for="pointsLimit">Points limit</label>
+        <input type="number" id="pointsLimit" value="2000" min="0" step="5">
+        <div class="points-meter">
+          <div class="points-bar" id="pointsBar"></div>
+        </div>
+        <span class="points-readout" id="pointsReadout">0 / 2000 pts</span>
+        <button class="clear-btn" id="clearListBtn">Clear list</button>
+      </section>
+
+      <div class="builder-layout">
+        <div class="builder-available">
+          <h3>Available units</h3>
+          <select id="builderFactionFilter"><option value="all">All factions</option></select>
+          <div class="unit-list" id="availableUnits"></div>
+        </div>
+        <div class="builder-current">
+          <h3>Your list</h3>
+          <div class="unit-list" id="currentList"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Edit <code>data/inventory.json</code> to add units. Your army list is saved in this browser only.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
