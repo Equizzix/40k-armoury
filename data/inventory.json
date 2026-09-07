@@ -38,4 +38,17 @@
     "paint_plan": "",
     "tags": ["character", "melee"]
   }
+    {
+    "id": "unit-004",
+    "faction": "Space Marines",
+    "name": "Vanguard Veterans with Jump Packs",
+    "role": "Infantry",
+    "points_cost": 105,
+    "quantity_owned": 5,
+    "painted_status": "Painted",
+    "images": ["images/VV/VVwJP-1-1"],
+    "notes": "",
+    "paint_plan": "",
+    "tags": ["character", "melee"]
+  }
 ]
